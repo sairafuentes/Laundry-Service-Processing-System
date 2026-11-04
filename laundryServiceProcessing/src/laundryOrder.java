@@ -70,6 +70,7 @@ public void setStatus(String status) {
             "Status cannot be empty."
         );
     }
+    String validStatus = status.trim();
 }
 }
 
