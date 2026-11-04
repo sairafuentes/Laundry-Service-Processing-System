@@ -18,5 +18,10 @@ public class laundryOrder {
             throw new IllegalArgumentException(
                 "Transaction ID cannot be empty.");
         }
+        // Check Customer Name
+        if (customerName == null || customerName.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                "Customer name cannot be empty.");
+        }
     }
 }
