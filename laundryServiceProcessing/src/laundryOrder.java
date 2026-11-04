@@ -29,5 +29,11 @@ public class laundryOrder {
             throw new IllegalArgumentException(
                 "Weight must be greater than zero.");
         }
+        // Check Service Type
+        if (serviceType == null || serviceType.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                "Service type cannot be empty.");
+        }
+
     }
 }
