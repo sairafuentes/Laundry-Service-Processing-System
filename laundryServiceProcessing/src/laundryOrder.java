@@ -71,6 +71,18 @@ public void setStatus(String status) {
         );
     }
     String validStatus = status.trim();
+    
+    if (validStatus.equalsIgnoreCase("Pending")) {
+        this.status = "Pending";
+
+    } else if (validStatus.equalsIgnoreCase("Completed")) {
+        this.status = "Completed";
+
+    } else {
+        throw new IllegalArgumentException(
+            "Invalid status. Use Pending or Completed."
+        );
+    }
 }
 }
 
