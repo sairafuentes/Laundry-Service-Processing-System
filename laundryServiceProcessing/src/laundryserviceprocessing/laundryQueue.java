@@ -73,6 +73,20 @@ public class laundryQueue {
     }
     // Display pending orders
     public void display() {
-        
+          if (isEmpty()) {
+            System.out.println("No pending laundry orders.");
+            return;
+        }
+
+        for (int i = 0; i < count; i++) {
+
+            laundryOrder order = getOrderAt(i);
+
+            System.out.println(
+                order.getTransactionID() + " - " +
+                order.getCustomerName()
+            );
+        }
+    
     }
 }
