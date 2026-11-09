@@ -1,13 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package laundryserviceprocessing;
 
-/**
- *
- * @author USER
- */
+
 public class laundryQueue {
-    
+     private laundryOrder[] orders;
+    private int front;
+    private int rear;
+    private int count;
+
+    // Constructor
+    public laundryQueue(int size) {
+
+        if (size <= 0) {
+            throw new IllegalArgumentException(
+                "Queue size must be greater than zero."
+            );
+        }
+
+        orders = new laundryOrder[size];
+        front = 0;
+        rear = -1;
+        count = 0;
+    } 
+ // Check if full
+    public boolean isFull() {
+        return count == orders.length;
+    }
+
+    // Get number of orders
+    public int getCount() {
+        return count;
+    }
 }
