@@ -67,7 +67,13 @@ public class laundryOrder {
     }
     // Setter with Validation
     public void setStatus(String status) {
-        
+    
+    if (status == null || status.trim().isEmpty()) {
+    throw new IllegalArgumentException(
+    "Status cannot be empty."
+    );
 }
 }
+}
+
 
