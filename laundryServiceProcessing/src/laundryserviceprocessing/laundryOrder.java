@@ -26,6 +26,13 @@ public class laundryOrder {
                 "Customer name cannot be empty.");
             
 
-        }       
+        }    
+         // Check Weight
+        if (weight <= 0 || Double.isNaN(weight)
+                || Double.isInfinite(weight)) {
+            throw new IllegalArgumentException(
+                "Weight must be greater than zero.");
     }
     }
+}
+
