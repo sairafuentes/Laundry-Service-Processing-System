@@ -60,4 +60,15 @@ public class laundryQueue {
     public int getCount() {
         return count;
     }
+      // Get order by position for JTable
+    public laundryOrder getOrderAt(int position) {
+
+        if (position < 0 || position >= count) {
+            return null;
+        }
+
+        int index = (front + position) % orders.length;
+
+        return orders[index];
+    }
 }
