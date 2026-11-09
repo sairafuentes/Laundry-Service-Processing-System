@@ -64,6 +64,10 @@ public class laundryOrder {
 
     public String getStatus() {
         return status;
+    }
+    // Setter with Validation
+    public void setStatus(String status) {
+        
 }
 }
 
