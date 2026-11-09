@@ -22,6 +22,21 @@ public class laundryQueue {
         rear = -1;
         count = 0;
     } 
+     // Process next order
+    public laundryOrder dequeue() {
+
+        if (isEmpty()) {
+            return null;
+        }
+
+        laundryOrder processed = orders[front];
+        orders[front] = null;
+
+        front = (front + 1) % orders.length;
+        count--;
+
+        return processed;
+    }
      // Check if empty
     public boolean isEmpty() {
         return count == 0;
