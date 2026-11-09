@@ -22,6 +22,10 @@ public class laundryQueue {
         rear = -1;
         count = 0;
     } 
+     // Check if empty
+    public boolean isEmpty() {
+        return count == 0;
+    }
  // Check if full
     public boolean isFull() {
         return count == orders.length;
