@@ -22,6 +22,7 @@ public class laundryQueue {
         rear = -1;
         count = 0;
     } 
+    
      // Process next order
     public laundryOrder dequeue() {
 
@@ -36,6 +37,15 @@ public class laundryQueue {
         count--;
 
         return processed;
+    }
+     // View first order
+    public laundryOrder peek() {
+
+        if (isEmpty()) {
+            return null;
+        }
+
+        return orders[front];
     }
      // Check if empty
     public boolean isEmpty() {
