@@ -68,10 +68,25 @@ public class laundryOrder {
     // Setter with Validation
     public void setStatus(String status) {
     
+        
     if (status == null || status.trim().isEmpty()) {
     throw new IllegalArgumentException(
     "Status cannot be empty."
     );
+}
+    
+    String validStatus = status.trim();
+
+    if (validStatus.equalsIgnoreCase("Pending")) {
+        this.status = "Pending";
+
+    } else if (validStatus.equalsIgnoreCase("Completed")) {
+        this.status = "Completed";
+
+    } else {
+        throw new IllegalArgumentException(
+            "Invalid status. Use Pending or Completed."
+        );
 }
 }
 }
