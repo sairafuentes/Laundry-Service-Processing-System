@@ -71,4 +71,8 @@ public class laundryQueue {
 
         return orders[index];
     }
+    // Display pending orders
+    public void display() {
+        
+    }
 }
