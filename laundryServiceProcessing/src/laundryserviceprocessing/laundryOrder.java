@@ -44,6 +44,26 @@ public class laundryOrder {
         this.weight = weight;
         this.serviceType = serviceType.trim();
         this.status = "Pending";
+    }
+     // Getters
+    public String getTransactionID() {
+        return transactionID;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public String getServiceType() {
+        return serviceType;
+    }
+
+    public String getStatus() {
+        return status;
 }
 }
 
