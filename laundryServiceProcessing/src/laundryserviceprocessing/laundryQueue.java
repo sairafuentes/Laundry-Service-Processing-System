@@ -96,5 +96,19 @@ public class laundryQueue {
         if (searchID == null || searchID.trim().isEmpty()) {
             return null;
         }
+         for (int i = 0; i < count; i++) {
+
+            laundryOrder order = getOrderAt(i);
+
+            if (order.getTransactionID()
+                    .equalsIgnoreCase(searchID.trim())) {
+
+                return order;
+            }
+        }
+
+        return null;
+    }
+}
     
 
