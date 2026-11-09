@@ -1,9 +1,14 @@
 
 package laundryserviceprocessing;
 
+<<<<<<< HEAD
 
 public class laundryQueue {
      private laundryOrder[] orders;
+=======
+public class laundryQueue {
+    private laundryOrder[] orders;
+>>>>>>> 6d875fd7964a7a96f5e58573916f2713f38c7ee6
     private int front;
     private int rear;
     private int count;
@@ -21,6 +26,7 @@ public class laundryQueue {
         front = 0;
         rear = -1;
         count = 0;
+<<<<<<< HEAD
     } 
      
 
@@ -112,3 +118,8 @@ public class laundryQueue {
 }
     
 
+=======
+    }
+
+}
+>>>>>>> 6d875fd7964a7a96f5e58573916f2713f38c7ee6
