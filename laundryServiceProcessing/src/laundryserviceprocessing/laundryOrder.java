@@ -38,6 +38,12 @@ public class laundryOrder {
             throw new IllegalArgumentException(
                 "Service type cannot be empty.");
     }
+         // Assign values
+        this.transactionID = transactionID.trim();
+        this.customerName = customerName.trim();
+        this.weight = weight;
+        this.serviceType = serviceType.trim();
+        this.status = "Pending";
 }
 }
 
