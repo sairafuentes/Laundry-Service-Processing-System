@@ -22,7 +22,8 @@ public class laundryQueue {
         rear = -1;
         count = 0;
     } 
-    
+     
+
      // Process next order
     public laundryOrder dequeue() {
 
@@ -89,4 +90,11 @@ public class laundryQueue {
         }
     
     }
-}
+     // Manual Linear Search
+    public laundryOrder search(String searchID) {
+
+        if (searchID == null || searchID.trim().isEmpty()) {
+            return null;
+        }
+    
+
