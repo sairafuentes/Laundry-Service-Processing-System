@@ -322,7 +322,7 @@ public class laundryGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProcessActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
-      // clearFields(); // TODO add your handling code here:
+       clearFields(); // TODO add your handling code here:
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
