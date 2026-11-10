@@ -9,6 +9,12 @@ public class laundrySearch {
             return null;
         }
 
-        return queue.search(searchID);
+       // Validate search ID
+        if (searchID == null || searchID.trim().isEmpty()) {
+            return null;
+        }
+
+        // Perform searching operation
+        return queue.search(searchID.trim());
     }
 }
