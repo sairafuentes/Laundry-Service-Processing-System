@@ -38,8 +38,6 @@ This project is developed as an academic requirement to demonstrate the applicat
 ### Object-Oriented Programming (OOP)
 - Encapsulation – Organizes data and methods within classes.
 - Inheritance – Uses parent and child classes to represent different laundry services.
-- Polymorphism – Allows different laundry service types to implement their respective behaviors.
-- Abstraction – Organizes common functionalities through shared class structures.
 
 ### Data Structures and Algorithms (DSA)
 - Queue – Uses the First In, First Out (FIFO) principle to organize laundry orders.
@@ -63,7 +61,7 @@ Note: The project structure may vary depending on the latest implementation.
 
 1. Clone or download this repository.
 2. Open NetBeans IDE.
-3. Select **File → Open Project**.
+3. Select File → Open Project.
 4. Locate and open the Laundry Service Processing System project.
 5. Run the main GUI class.
 6. Start managing laundry orders through the application.
